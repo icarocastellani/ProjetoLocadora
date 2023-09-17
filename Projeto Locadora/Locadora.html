@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="locadora.css">
+    <title>Locadora CPS - Fatec Franca</title>
+</head>
+<body>
+    <h1>Cadastro de filmes</h1>
+    <p>
+        Titulo do filme:
+        <input type="text" id="inFilme">
+    </p>
+    <p>
+        Quantidade de unidades: 
+        <input type="text" id="inQtde">
+    </p>
+    <p>
+        Duração em Minutos: 
+        <input type="text" id="inDuracao">
+    </p>
+
+    <p> Classificação: </p>
+        <p><input type="radio" name="classLivre" id="classLivre"> Livre</p>
+        <p><input type="radio" name="class10" id="class10"> Não recomendado para Menores de 10 anos</p>
+        <p><input type="radio" name="class12" id="class12"> Não recomendado para Menores de 12 anos</p>
+        <p><input type="radio" name="class14" id="class14"> Não recomendado para Menores de 14 anos</p>
+        <p><input type="radio" name="class16" id="class16"> Não recomendado para Menores de 16 anos</p>
+        <p><input type="radio" name="class18" id="class18"> Não recomendado para Menores de 18 anos</p>       
+    
+    <p>
+        <input type="button" value="Cadastrar filme" id="btCadastrar">
+        <input type="button" value="Limpar Campos" id="btLimpar">
+    </p>
+    <p>
+        <input type="button" value="Mostrar filmes" id="btMostrar">
+        <input type="button" value="Salvar lista como JSON" id="btSalvarJSON">
+    </p>
+
+    <p>
+        <input type="button" value="Ordenar por nome (A-Z)" id="btOrdenarnome">
+        <input type="button" value="Ordenar por unidades (A-Z)" id="btOrdenarunidades">
+        <input type="button" value="Ordenar por duração (A-Z)" id="btOrdenarduracao">
+        <input type="button" value="Ordenar por classificação (A-Z)" id="btOrdenaclassificacao">
+    </p>
+    <h3 id="outResposta"></h3>
+        <!-- Área para exibir a listagem de títulos -->
+        <div id="listagem"></div>
+
+    <script src="locadora.js"></script>
+</body>
+</html>
